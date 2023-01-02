@@ -1,0 +1,92 @@
+// test case 1
+blocks = [
+  {
+    gym: false,
+    school: true,
+    store: false,
+  },
+  {
+    gym: true,
+    school: false,
+    store: false,
+  },
+  {
+    gym: true,
+    school: true,
+    store: false,
+  },
+  {
+    gym: false,
+    school: true,
+    store: false,
+  },
+  {
+    gym: false,
+    school: true,
+    store: true,
+  },
+]
+reqs = ['school']
+expected output : 0
+
+// test case 2
+blocks = [
+  {
+    gym: false,
+    school: true,
+    store: false,
+  },
+  {
+    gym: true,
+    school: false,
+    store: false,
+  },
+  {
+    gym: true,
+    school: true,
+    store: false,
+  },
+  {
+    gym: false,
+    school: true,
+    store: false,
+  },
+  {
+    gym: false,
+    school: true,
+    store: true,
+  },
+]
+reqs = ['gym']
+expected output : 1
+
+// test case 3
+blocks = [
+  {
+    gym: false,
+    school: true,
+    store: false,
+  },
+  {
+    gym: true,
+    school: false,
+    store: false,
+  },
+  {
+    gym: true,
+    school: true,
+    store: false,
+  },
+  {
+    gym: false,
+    school: true,
+    store: false,
+  },
+  {
+    gym: false,
+    school: true,
+    store: true,
+  },
+]
+reqs = ['store']
+expected output : 4

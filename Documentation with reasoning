@@ -1,0 +1,40 @@
+section1 : Understanding the question:
+sentence 1 :
+You're looking to move into a new apartment on specific street, and you're given a list of contiguous blocks on that street where
+each block contains an apartment that you could move into.
+
+understanding:
+ I have been provided with a array of blocks. i.e. block[0, .....]
+ 
+sentence 2:
+You also have a list of requirements: a list of buildings that are important to you. For instance, you might value having a school and a gym near your apartment. 
+understanding:
+ List of requrements or array of requirements .i.e. reqs[gym,...]
+
+sentence 3:
+The list of blocks that you have contains information at every block about all of the buildings that arepresent and absent at the block in question. For instance, for every block, you might know whether a school, a pool, an office, and a
+gym are present.
+understanding:
+blocks is a arrory of objects/sets.
+sentnece 4
+In order to optimize your life, you want to pick an apartment block such that you minimize the farthest distance you'd have to walk
+from your apartment to reach any of your required buildings.
+the location (the index) of the block that's most optimal for you.
+understanding:
+finding a the index of a block with all facilites or having the feciliteis in the nearby block/indices
+Write a function that takes in a list of contiguous blocks on a specific street and a list of your required buildings and that returns
+
+Approch:
+step 1 : finding the availbality of each req in the blocks array .ie. converting or making a new list of values denoting each req in each block block[index][reqirement availability]
+step 2 : finding maximum distance between certain blocks and requirements .i.e. getting a list with distances as values.
+step 3 : calculating the requiremnts block with smallest required distance from the requirements .ie. find the index with minimum value.
+
+
+explaination of function:
+1.Apartment hunting: this function takes in a list of blocks and list of requirements as input and passes on this information to sub functions and reurns the index with minimum value found from getIdxAtMinValue
+
+2.getMinDistances: This function takes in a list of blocks (blocks) and a requirement (req) as input and returns a list of minimum distances of each block from that requirement.
+
+3.getMaxDistancesAtBlocks: This function takes in a list of blocks (blocks) and a list of minimum distances from each block to each requirement (minDistancesFromBlocks) as input and returns a list of maximum distances of each block from all the requirements.
+
+4.getIdxAtMinValue: This function takes in a list of values (array) as input and returns the index of the element with the minimum value in the list.
